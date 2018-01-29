@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/search/normal</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="icon-小图标" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon/search/normal" fill="#5E5E5E" fill-rule="nonzero">
+            <g id="search-" transform="translate(0.777778, 0.777778)">
+                <path d="M10.3897887,5.19489437 C10.3897887,2.32583343 8.0639553,0 5.19489437,0 C2.32583343,0 0,2.32583343 0,5.19489437 C0,8.0639553 2.32583343,10.3897887 5.19489437,10.3897887 C8.0639553,10.3897887 10.3897887,8.0639553 10.3897887,5.19489437 Z M1.15442097,5.19489437 C1.15442097,2.96340253 2.96340253,1.15442097 5.19489437,1.15442097 C7.42638621,1.15442097 9.23536776,2.96340253 9.23536776,5.19489437 C9.23536776,7.42638621 7.42638621,9.23536776 5.19489437,9.23536776 C2.96340253,9.23536776 1.15442097,7.42638621 1.15442097,5.19489437 Z M12.4059233,13.2222222 L8.71177622,9.52807512 L9.52807512,8.71177622 L13.2222222,12.4059233 L12.4059233,13.2222222 Z" id="Combined-Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

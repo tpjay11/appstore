@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="40px" viewBox="0 0 36 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>header bar/button/minimise/hover</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="header-bar-标题栏" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="header-bar/button/minimise/hover">
+            <g id="minimise_hover">
+                <rect id="Rectangle-6" fill-opacity="0.06" fill="#636381" x="0" y="0" width="36" height="40"></rect>
+                <path d="M13,19.5 L24,19.5" id="Line-3" stroke="#5E5E5E" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+        </g>
+    </g>
+</svg>

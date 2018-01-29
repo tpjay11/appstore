@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="40px" viewBox="0 0 36 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>header bar/button/close/normal</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="header-bar-标题栏" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="header-bar/button/close/normal">
+            <g id="close_normal">
+                <rect id="Rectangle-6" fill="#D8D8D8" opacity="0" x="0" y="0" width="36" height="40"></rect>
+                <g id="Group-16" transform="translate(18.000000, 20.000000) rotate(45.000000) translate(-18.000000, -20.000000) translate(10.500000, 12.500000)" stroke="#555555" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M0.5,7.5 L14.5,7.5" id="Line-3"></path>
+                    <path d="M7.5,0.5 L7.5,14.5" id="Line-3-Copy"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

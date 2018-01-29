@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>button/previous/press</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="26" height="26" rx="4"></rect>
+        <filter x="-1.9%" y="-1.9%" width="103.8%" height="103.8%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 0.941176471   0 0 0 0 0.498039216  0 0 0 0.395380435 0" type="matrix" in="shadowInnerInner1" result="shadowMatrixInner1"></feColorMatrix>
+            <feOffset dx="0" dy="-1" in="SourceAlpha" result="shadowOffsetInner2"></feOffset>
+            <feComposite in="shadowOffsetInner2" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner2"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.811764706   0 0 0 0 0.0705882353   0 0 0 0 0.325490196  0 0 0 0.1 0" type="matrix" in="shadowInnerInner2" result="shadowMatrixInner2"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixInner1"></feMergeNode>
+                <feMergeNode in="shadowMatrixInner2"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="button-按钮" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="button/previous/press">
+            <g id="previous_press">
+                <g id="Rectangle-62">
+                    <use fill="#FA9847" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                </g>
+                <g id="icon/arrow-white/arrow2" transform="translate(13.000000, 13.000000) scale(-1, 1) translate(-13.000000, -13.000000) translate(4.000000, 4.000000)" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline id="菜单箭头选中" points="6.75 3.75 12 9 6.75 14.25"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

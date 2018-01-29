@@ -1,0 +1,12 @@
+.nav-button--back {
+    background-image: url('./previous_normal.svg');
+}
+.nav-button--back:hover {
+    background-image: url('./previous_hover.svg');
+}
+.nav-button--back:active {
+    background-image: url('./previous_press.svg');
+}
+.nav-button.nav-button--back[disabled] {
+    background-image: url('./previous_disable.svg');
+}

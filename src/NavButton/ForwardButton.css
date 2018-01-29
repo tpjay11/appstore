@@ -1,0 +1,13 @@
+.nav-button--forward {
+    background-image: url('./next_normal.svg');
+    margin-left: 2px;
+}
+.nav-button--forward:hover {
+    background-image: url('./next_hover.svg');
+}
+.nav-button--forward:active {
+    background-image: url('./next_press.svg');
+}
+.nav-button.nav-button--forward[disabled] {
+    background-image: url('./next_disabled.svg');
+}

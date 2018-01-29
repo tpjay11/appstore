@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="40px" viewBox="0 0 36 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>header bar/button/menu/press</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="header-bar-标题栏" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="header-bar/button/menu/press">
+            <g id="menu_press">
+                <rect id="Rectangle-6" fill-opacity="0.12" fill="#34344B" x="0" y="0" width="36" height="40"></rect>
+                <path d="M12.5,16 L12,16 L12,15 L12.5,15 L19.5,15 L20,15 L20,16 L19.5,16 L12.5,16 Z M12.5647059,21 L12,21 L12,20 L12.5647059,20 L23.4352941,20 L24,20 L24,21 L23.4352941,21 L12.5647059,21 Z M12.5647059,26 L12,26 L12,25 L12.5647059,25 L23.4352941,25 L24,25 L24,26 L23.4352941,26 L12.5647059,26 Z" id="Combined-Shape" fill="#5E5E5E" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

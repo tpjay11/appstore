@@ -1,0 +1,57 @@
+.btn {
+    border: 0;
+    background: none;
+    overflow: hidden;
+    width: 36px;
+    height: 40px;
+}
+
+.btn.btn--menu {
+    background: url('./menu_normal.svg');
+}
+.btn.btn--menu:hover, .btn.btn--menu:focus {
+    background: url('./menu_hover.svg');
+}
+.btn.btn--menu:active {
+    background: url('./menu_press.svg')
+}
+
+.btn.btn--min {
+    background: url('./minimize_normal.svg');
+}
+.btn.btn--min:hover,.btn.btn--min:focus {
+    background: url('./minimize_hover.svg');
+}
+.btn.btn--min:active {
+    background: url('./minimize_press.svg')
+}
+
+.btn.btn--max {
+    background: url('./maximize_normal.svg');
+}
+.btn.btn--max:hover, .btn.btn--max:focus {
+    background: url('./maximize_hover.svg');
+}
+.btn.btn--max:active {
+    background: url('./maximize_press.svg')
+}
+
+.btn.btn--revert {
+    background: url('./unmaximize_normal.svg');
+}
+.btn.btn--revert:hover, .btn.btn--revert:focus {
+    background: url('./unmaximize_hover.svg');
+}
+.btn.btn--revert:active {
+    background: url('./unmaximize_press.svg');
+}
+
+.btn.btn--close {
+    background: url('./close_normal.svg');
+}
+.btn.btn--close:hover, .btn.btn--close:focus {
+    background: url('./close_hover.svg');
+}
+.btn.btn--close:active {
+    background: url('./close_press.svg')
+}
