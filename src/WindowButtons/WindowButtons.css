@@ -1,3 +1,7 @@
+.window-buttons {
+    display: flex;
+}
+
 .btn {
     border: 0;
     background: none;
@@ -14,6 +18,10 @@
 }
 .btn.btn--menu:active {
     background: url('./menu_press.svg')
+}
+.btn-icon--menu {
+    width: 12px;
+    height: 12px;
 }
 
 .btn.btn--min {

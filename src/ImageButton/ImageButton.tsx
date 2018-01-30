@@ -17,7 +17,9 @@ class ImageButton extends React.Component<Props, {}> {
     render() {
         const { title, className, onClick, disabled } = this.props;
         return (
-            <button className={`image-button ${className}`} onClick={onClick} title={title} disabled={disabled}/>
+            <button className={`image-button ${className}`} onClick={onClick} title={title} disabled={disabled}>
+                {this.props.children}
+            </button>
         );
     }
 }
