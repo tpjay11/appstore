@@ -1,6 +1,7 @@
 import * as React from 'react';
 import './WindowButtons.css';
 import ImageButton from '../ImageButton';
+import Badge from '../Badge';
 
 // tslint:disable:no-console no-any
 export default class WindowButtons extends React.Component<any, any> {
@@ -36,7 +37,11 @@ export default class WindowButtons extends React.Component<any, any> {
                     className="btn btn-full btn--menu"
                     onClick={this.toggleMenu}
                     title="菜单"
-                />
+                >
+                    <Badge counter={0}>
+                        <div className="btn-icon--menu"/>
+                    </Badge>
+                </ImageButton>
                 <ImageButton
                     className="btn btn-full btn--min"
                     onClick={this.minimize}

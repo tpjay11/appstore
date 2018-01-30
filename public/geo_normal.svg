@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>地理-normal</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="地理-normal" stroke="#5E5E5E">
+            <path d="M7.1109127,13.8890873 C4.9630291,11.7412037 4.9630291,8.25879631 7.1109127,6.1109127 C9.25879631,3.9630291 12.7412037,3.9630291 14.8890873,6.1109127 C17.0369709,8.25879631 17.0369709,11.7412037 14.8890873,13.8890873 C12.7412037,16.0369709 9.25879631,16.0369709 7.1109127,13.8890873 Z" id="Oval-3"></path>
+            <path d="M6.4095505,13.9625346 L6.5925687,16.632578 L6.4095505,13.9625346 Z" id="Path-14" transform="translate(6.909550, 15.297556) rotate(-315.000000) translate(-6.909550, -15.297556) "></path>
+            <path d="M16.8850911,6.04742881 L16.8657234,4.0537666 L16.8850911,6.04742881 Z" id="Path-14" transform="translate(17.365723, 5.050598) rotate(-315.000000) translate(-17.365723, -5.050598) "></path>
+            <path d="M7,19.5 L16,19.5" id="Path-16"></path>
+            <path d="M11.5,17.6532452 L11.5,19.5" id="Path-15"></path>
+            <path d="M9.9049511,20.1549511 C14.0470867,20.1549511 17.4049511,16.7970867 17.4049511,12.6549511 C17.4049511,8.51281547 14.0470867,5.1549511 9.9049511,5.1549511" id="Oval-4" transform="translate(13.654951, 12.654951) rotate(-315.000000) translate(-13.654951, -12.654951) "></path>
+            <path d="M6.62390362,6.52509427 L15.1577186,13.6536665" id="Path-17"></path>
+        </g>
+    </g>
+</svg>

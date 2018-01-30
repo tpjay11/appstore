@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>音乐-hover</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="音乐-hover">
+            <polygon id="Rectangle-13" fill="#D8D8D8" points="8.5 7.5 18.5 5.5 18.5 8.5 8.5 10.5"></polygon>
+            <polyline id="Path-18" stroke="#5E5E5E" points="8.5 17.5 8.5 7.5 18.5 5.5 18.5 16.5"></polyline>
+            <ellipse id="Oval" fill="#D8D8D8" transform="translate(16.495962, 16.321938) rotate(-15.000000) translate(-16.495962, -16.321938) " cx="16.4959617" cy="16.3219385" rx="2" ry="1.6"></ellipse>
+            <ellipse id="Oval" fill="#D8D8D8" transform="translate(6.495962, 17.321938) rotate(-15.000000) translate(-6.495962, -17.321938) " cx="6.49596174" cy="17.3219385" rx="2" ry="1.6"></ellipse>
+            <path d="M8.5,10.5 L18.5,8.5" id="Path-19" stroke="#5E5E5E"></path>
+            <ellipse id="Oval" stroke="#5E5E5E" transform="translate(16.495962, 16.321938) rotate(-15.000000) translate(-16.495962, -16.321938) " cx="16.4959617" cy="16.3219385" rx="2" ry="1.6"></ellipse>
+            <ellipse id="Oval" stroke="#5E5E5E" transform="translate(6.495962, 17.321938) rotate(-15.000000) translate(-6.495962, -17.321938) " cx="6.49596174" cy="17.3219385" rx="2" ry="1.6"></ellipse>
+        </g>
+    </g>
+</svg>

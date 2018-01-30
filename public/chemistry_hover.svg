@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>化学-hover</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="化学-hover" stroke="#5E5E5E">
+            <path d="M16,4.5 L14.5,4.5 L14.5,11 L19.0677265,16.1767567 C19.7985336,17.0050048 19.7195421,18.2688686 18.8912941,18.9996757 C18.5258948,19.3220868 18.0553552,19.5 17.5680508,19.5 L6.43194919,19.5 C5.32737969,19.5 4.43194919,18.6045695 4.43194919,17.5 C4.43194919,17.0126956 4.60986237,16.542156 4.93227348,16.1767567 L9.5,11 L9.5,4.5 L8,4.5" id="Combined-Shape"></path>
+            <polygon id="Rectangle" fill="#D8D8D8" stroke-linecap="round" stroke-linejoin="round" points="10 13.5 14 13.5 17.5 17.5 6.5 17.5"></polygon>
+            <path d="M9,11.5 L12,11.5" id="Path-2"></path>
+            <path d="M9.5,9.5 L13,9.5" id="Path-2"></path>
+            <path d="M9.5,5.5 L13,5.5" id="Path-2"></path>
+            <path d="M9.5,7.5 L12,7.5" id="Path-2"></path>
+        </g>
+    </g>
+</svg>

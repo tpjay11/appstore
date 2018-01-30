@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>英语-hover</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="英语-hover">
+            <rect id="Rectangle-5" stroke="#5E5E5E" x="4.5" y="4.5" width="15" height="15" rx="2"></rect>
+            <rect id="Rectangle-5" fill="#D8D8D8" x="6" y="6" width="12" height="12"></rect>
+            <polyline id="Path-3" stroke="#5E5E5E" points="12 9.5 7.5 9.5 7.5 15.5 12 15.5"></polyline>
+            <path d="M7.5,12.5 L12,12.5" id="Path-4" stroke="#5E5E5E"></path>
+            <path d="M16.5,16 L16.5,13 C16.5,12.1715729 15.8284271,11.5 15,11.5 L15,11.5 C14.1715729,11.5 13.5,12.1715729 13.5,13 L13.5,16" id="Path-4" stroke="#5E5E5E"></path>
+            <path d="M13.5,11 L13.5,14" id="Path-26" stroke="#5E5E5E"></path>
+        </g>
+    </g>
+</svg>
