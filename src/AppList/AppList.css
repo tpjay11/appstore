@@ -1,0 +1,8 @@
+.app-list .showcase {
+    margin-top: 16px;
+    float: left;
+}
+
+.app-list .showcase + .showcase {
+    margin-left: 16px;
+}
