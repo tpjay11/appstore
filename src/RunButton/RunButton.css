@@ -1,0 +1,10 @@
+.run-button {
+    text-align: center;
+}
+
+.run-button__progress-tip {
+    margin: 2px 0 0;
+    font-size: 14px;
+    line-height: 20px;
+    color: #5e5e5e;
+}

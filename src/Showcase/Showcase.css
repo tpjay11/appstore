@@ -1,0 +1,42 @@
+.showcase {
+    display: inline-block;
+    border-radius: 4px 4px 0 0;
+    background: white;
+}
+
+.showcase__thumbnail {
+    border-radius: 4px;
+    width: 260px;
+    height: 124px;
+    border: 1px solid rgba(0,0,0,0.08);
+}
+
+.showcase__thumbnail + .showcase__detail {
+    margin-top: 6px;
+}
+
+.showcase__detail {
+    height: 46px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.showcase__detail__name, .showcase__detail__author {
+    padding: 0;
+    margin: 0;
+}
+.showcase__detail__name {
+    color: #5e5e5e;
+    font-size: 16px;
+    line-height: 24px;
+}
+.showcase__detail__author {
+    font-size: 14px;
+    color: #5e5e5e;
+    line-height: 20px;
+}
+.showcase__ops {
+    margin-left: auto;
+    margin-right: 0;
+    flex: 0 0 70px;
+}
