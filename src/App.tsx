@@ -2,6 +2,7 @@ import * as React from 'react';
 import AppStoreHeader from './Header';
 import './App.css';
 import CategoryList, { CategoryProps as CategoryListItemProp } from './CategoryList';
+import Showcases from './Showcases';
 
 export interface CategoryProps {
   id: string;
@@ -20,6 +21,23 @@ function toCategoryListItemProp(prop: CategoryProps): CategoryListItemProp {
     active: false,
   };
 }
+
+const appData = [
+  {
+    appID: 'firefox',
+    name: '火狐浏览器',
+    author: 'Mozilla',
+    thumbnail: '',
+    status: 'installed',
+  },
+  {
+    appID: 'chrome',
+    name: '谷歌浏览器',
+    author: 'Google Chrome',
+    thumbnail: '',
+    status: 'uninstalled',
+  }
+];
 
 class App extends React.Component<Props, {}> {
   categories: CategoryListItemProp[];
@@ -40,7 +58,7 @@ class App extends React.Component<Props, {}> {
           </aside>
           <main>
             {/* <router-view></router-view> */}
-            This is the main section to display apps.
+            <Showcases title="语文" subtitle={`共${appData.length}个应用`} value={appData}/>
           </main>
         </div>
       </>

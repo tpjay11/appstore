@@ -8,6 +8,9 @@
     position: absolute;
     overflow: hidden;
     background-color: #FF4849;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
 }
 
 .badge-counter.badge-counter--num {
