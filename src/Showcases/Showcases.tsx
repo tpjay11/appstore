@@ -1,12 +1,14 @@
 import * as React from 'react';
 import Panel from '../Panel';
-import { Props as ShowcaseInfo } from '../Showcase';
+import { ShowcaseProps } from '../Showcase';
 import AppList from '../AppList';
+
+export { ShowcaseProps };
 
 export interface Props {
     title: string;
     subtitle: string;
-    value: ShowcaseInfo[];
+    value: ShowcaseProps[];
     render?(): React.ReactChild;
 }
 
