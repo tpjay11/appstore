@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { RouteComponentProps } from 'react-router-dom';
+import { observer } from 'mobx-react';
 
 export interface RouteProps {
     id: string;
@@ -17,4 +18,4 @@ class ManagerPage extends React.Component<Props, State> {
     }
 }
 
-export default ManagerPage;
+export default observer(ManagerPage);

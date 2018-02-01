@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { observer, inject } from 'mobx-react';
 import './CategoryItem.css';
 import * as cs from 'classnames';
 
@@ -8,9 +9,11 @@ export interface Props {
     name: string;
     url: string;
     title: string;
-    active: boolean;
+    active?: boolean;
 }
 
+@inject('store')
+@observer
 class CategoryItem extends React.PureComponent<Props, {}> {
     constructor(props: Props) {
         super(props);

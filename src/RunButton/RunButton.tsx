@@ -5,14 +5,14 @@ import './RunButton.css';
 
 export interface Props {
     appID: string;
-    status: string;
+    state: string;
     onClick?(): void;
 }
 
 interface State {
     percent: number;
     error: null | string;
-    status: string;
+    state: string;
 }
 
 class RunButton extends React.Component<Props, State> {
@@ -20,7 +20,7 @@ class RunButton extends React.Component<Props, State> {
         super(props);
         this.state = {
             percent: 0,
-            status: '',
+            state: '',
             error: null,
         };
         this.installApp = this.installApp.bind(this);
@@ -28,7 +28,7 @@ class RunButton extends React.Component<Props, State> {
     installApp() {
         // TODO(liliqiang): install app, change status, percent and error.
         this.setState({
-            status: 'downloading',
+            state: 'downloading',
             percent: 10,
         });
         const id = setInterval(
@@ -38,12 +38,12 @@ class RunButton extends React.Component<Props, State> {
                         clearInterval(id);
                         
                         return {
-                            status: 'done',
+                            state: 'done',
                             percent: 100,
                         };
                     }
                     return {
-                        status: 'installing',
+                        state: 'installing',
                         percent: p.percent + 10,
                     };
                 });
@@ -57,18 +57,18 @@ class RunButton extends React.Component<Props, State> {
         console.log(this.props.appID);
     }
     renderButton() {
-        return this.props.status === 'installed' ?
+        return this.props.state === 'installed' ?
             <Button onClick={this.launchApp}>打开</Button>
             : <Button onClick={this.installApp}>安装</Button>;
     }
     progressInfo() {
-        const { status } = this.state;
+        const { state } = this.state;
 
-        if (status === 'downloading') {
+        if (state === 'downloading') {
             return '下载中';
         }
 
-        if (status === 'installing') {
+        if (state === 'installing') {
             return '安装中';
         }
 
@@ -83,7 +83,7 @@ class RunButton extends React.Component<Props, State> {
         );
     }
     render() {
-        return this.state.status === 'downloading' || this.state.status === 'installing' ?
+        return this.state.state === 'downloading' || this.state.state === 'installing' ?
             this.renderProgress() :
             this.renderButton();
     }

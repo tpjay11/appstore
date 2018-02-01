@@ -1,24 +1,9 @@
-import * as React from 'react';
 import defaultStore from './Store';
+import withInjectStore from './withInjectStore';
 
-import { Store } from './Store';
-
-export interface StoreComponentProps {
-    store: Store;
-}
+export { Store, StoreComponentProps, OuterStoreComopnentProps } from './Store';
 
 export { AppInfo, AppResult, State } from './AppStore';
 
-export { Store };
-
+export { withInjectStore };
 export default defaultStore;
-
-// export function inject() {
-
-// }
-
-export class StoreComponent<T extends P, P, S> extends React.Component<P, S> {
-    get injected() {
-        return this.props as T;
-    }
-}

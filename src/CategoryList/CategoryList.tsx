@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { observer, inject } from 'mobx-react';
 import CategoryItem, { Props as CategoryProps } from './CategoryItem';
 import './CategoryList.css';
 
@@ -12,6 +13,9 @@ export interface CategoryListItemProps {
     url: string;
     title: string;
 }
+
+@inject('store')
+@observer
 class CategoryList extends React.PureComponent<Props, {}> {
     constructor(props: Props) {
         super(props);
@@ -21,16 +25,7 @@ class CategoryList extends React.PureComponent<Props, {}> {
         return (
             <ul className="category-list">
                 {this.props.value.map(info => (
-                    // TODO(liliqiang): selected
-                    <CategoryItem
-                        key={info.id}
-                        id={info.id}
-                        name={info.name}
-                        icon={info.icon}
-                        url={info.url}
-                        title={info.title}
-                        active={info.active}
-                    />)
+                    <CategoryItem key={info.id} {...info} />)
                 )}
             </ul>
         );

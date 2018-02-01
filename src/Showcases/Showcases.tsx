@@ -1,6 +1,8 @@
 import * as React from 'react';
+import { observer, inject } from 'mobx-react';
 import Panel from '../Panel';
 import Showcase, { ShowcaseProps } from '../Showcase';
+import { StoreComponentProps, withInjectStore } from '../Store';
 
 export { ShowcaseProps };
 
@@ -11,6 +13,8 @@ export interface Props {
     render?(): React.ReactChild;
 }
 
+type CProps = Props & StoreComponentProps;
+
 interface State {
     panelWidth: number;
 }
@@ -20,8 +24,8 @@ const SIDEBAR_WIDTH = 170;
 const PADDING = 20;
 const MIN_MARGIN = 20;
 
-class Showcases extends React.Component<Props, State> {
-    constructor(props: Props) {
+class Showcases extends React.Component<CProps, State> {
+    constructor(props: CProps) {
         super(props);
         this.state = {
             panelWidth: 0,
@@ -63,4 +67,4 @@ class Showcases extends React.Component<Props, State> {
     }
 }
 
-export default Showcases;
+export default withInjectStore(inject('store')(observer(Showcases)));

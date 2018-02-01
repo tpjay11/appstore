@@ -1,20 +1,26 @@
 import * as React from 'react';
+import { observer, inject } from 'mobx-react';
 import RunButton from '../RunButton';
 import './Showcase.css';
+import { StoreComponentProps, withInjectStore } from '../Store';
 
 export interface Props {
     id: string;
-    status: string;
+    state: string;
     author: string;
     name: string;
     thumbnail: string;
 }
 
+type CProps = Props & StoreComponentProps;
+
 interface State {}
 
-class Showcase extends React.Component<Props, State> {
+@inject('store')
+@observer
+class Showcase extends React.Component<CProps, State> {
     render() {
-        const { id, name, author, status, thumbnail } = this.props;
+        const { id, name, author, state, thumbnail } = this.props;
         return (
             <div className="showcase">
                 <img className="showcase__thumbnail" src={thumbnail} height="124" width="260" />
@@ -24,7 +30,7 @@ class Showcase extends React.Component<Props, State> {
                         <p className="showcase__detail__author">{author}</p>
                     </div>
                     <div className="showcase__ops">
-                        <RunButton appID={id} status={status} />
+                        <RunButton appID={id} state={state} />
                     </div>
                 </div>
             </div>
@@ -32,4 +38,4 @@ class Showcase extends React.Component<Props, State> {
     }
 }
 
-export default Showcase;
+export default withInjectStore(Showcase);

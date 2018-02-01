@@ -1,19 +1,23 @@
 import * as React from 'react';
 import { Route } from 'react-router-dom';
+import { observer, inject } from 'mobx-react';
 import AppStoreHeader from './Header';
 import './App.css';
 import CategoryList, { CategoryProps as CategoryListItemProp } from './CategoryList';
 import ShowcasePage from './ShowcasePage';
 import SearchResultPage from './SearchResultPage';
 import ManagerPage from './ManagerPage';
+import { StoreComponentProps } from './Store';
 
 export interface CategoryProps {
   id: string;
   name: string;
   icon: string;
 }
-export interface Props {
-  categories: CategoryProps[];
+
+export interface Props extends StoreComponentProps { }
+
+interface State {
 }
 
 function toCategoryListItemProp(prop: CategoryProps): CategoryListItemProp {
@@ -25,12 +29,16 @@ function toCategoryListItemProp(prop: CategoryProps): CategoryListItemProp {
   };
 }
 
-class App extends React.Component<Props, { categories: CategoryListItemProp[] }> {
-  categories: CategoryListItemProp[];
-
+@inject('store')
+@observer
+class App extends React.Component<Props, State> {
   constructor(props: Props) {
     super(props);
-    this.categories = props.categories.map(toCategoryListItemProp);
+  }
+
+  componentWillMount() {
+    const { store } = this.props;
+    store.fetchCategories();
   }
 
   render() {
@@ -40,13 +48,13 @@ class App extends React.Component<Props, { categories: CategoryListItemProp[] }>
         <div className="content">
           <aside>
             <nav>
-              <CategoryList value={this.categories} />
+              <CategoryList value={this.props.store.allCategories().map(toCategoryListItemProp)} />
             </nav>
           </aside>
           <main>
             <Route
               path="/cate/:id"
-              component={ShowcasePage}
+              render={(props) => <ShowcasePage {...props} store={this.props.store} />}
             />
             <Route
               path="/search"

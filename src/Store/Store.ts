@@ -32,6 +32,14 @@ class Store {
     }
 }
 
+export interface StoreComponentProps {
+    store: Store;
+}
+
+export interface OuterStoreComopnentProps {
+    store?: Store;
+}
+
 export { Store };
 export function getInstance(): Store {
     return new Store;

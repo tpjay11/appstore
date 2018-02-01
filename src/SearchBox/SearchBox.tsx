@@ -45,6 +45,10 @@ export default class SearchBox extends React.Component<Props, State> {
         this.clearInput = this.clearInput.bind(this);
     }
 
+    componentWillUnmount() {
+        this.input = null;
+    }
+
     // tslint:disable:no-any
     onKeyDown(e: any) {
         const ev = e as KeyboardEvent;
