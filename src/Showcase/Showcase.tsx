@@ -3,18 +3,18 @@ import RunButton from '../RunButton';
 import './Showcase.css';
 
 export interface Props {
-    appID: string;
+    id: string;
     status: string;
     author: string;
     name: string;
     thumbnail: string;
 }
-interface S {
-}
 
-class Showcase extends React.Component<Props, S> {
+interface State {}
+
+class Showcase extends React.Component<Props, State> {
     render() {
-        const { appID, name, author, status, thumbnail } = this.props;
+        const { id, name, author, status, thumbnail } = this.props;
         return (
             <div className="showcase">
                 <img className="showcase__thumbnail" src={thumbnail} height="124" width="260" />
@@ -24,7 +24,7 @@ class Showcase extends React.Component<Props, S> {
                         <p className="showcase__detail__author">{author}</p>
                     </div>
                     <div className="showcase__ops">
-                        <RunButton appID={appID} status={status} />
+                        <RunButton appID={id} status={status} />
                     </div>
                 </div>
             </div>

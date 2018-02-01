@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Showcase, { Props as AppInfo } from '../Showcase';
+import Showcase, { ShowcaseProps as AppInfo } from '../Showcase';
 import './AppList.css';
 
 export interface Props {
@@ -19,14 +19,7 @@ class AppList extends React.Component<Props, State> {
             <div className="app-list clearfix">
                 {
                     value.map(info => {
-                        return <Showcase
-                            key={info.appID}
-                            author={info.author}
-                            appID={info.author}
-                            name={info.name}
-                            thumbnail={info.thumbnail}
-                            status={info.status}
-                        />;
+                        return <Showcase key={info.id} {...info} />;
                     })
                 }
             </div>

@@ -1,8 +1,11 @@
 import * as React from 'react';
+import { Route } from 'react-router-dom';
 import AppStoreHeader from './Header';
 import './App.css';
 import CategoryList, { CategoryProps as CategoryListItemProp } from './CategoryList';
-import Showcases from './Showcases';
+import ShowcasePage from './ShowcasePage';
+import SearchResultPage from './SearchResultPage';
+import ManagerPage from './ManagerPage';
 
 export interface CategoryProps {
   id: string;
@@ -16,36 +19,20 @@ export interface Props {
 function toCategoryListItemProp(prop: CategoryProps): CategoryListItemProp {
   return {
     ...prop,
-    url: `/cat/${prop.id}`,
     title: `${prop.name}分类`,
+    url: `/cate/${prop.id}`,
     active: false,
   };
 }
 
-const appData = [
-  {
-    appID: 'firefox',
-    name: '火狐浏览器',
-    author: 'Mozilla',
-    thumbnail: '',
-    status: 'installed',
-  },
-  {
-    appID: 'chrome',
-    name: '谷歌浏览器',
-    author: 'Google Chrome',
-    thumbnail: '',
-    status: 'uninstalled',
-  }
-];
-
-class App extends React.Component<Props, {}> {
+class App extends React.Component<Props, { categories: CategoryListItemProp[] }> {
   categories: CategoryListItemProp[];
 
   constructor(props: Props) {
     super(props);
     this.categories = props.categories.map(toCategoryListItemProp);
   }
+
   render() {
     return (
       <>
@@ -57,8 +44,18 @@ class App extends React.Component<Props, {}> {
             </nav>
           </aside>
           <main>
-            {/* <router-view></router-view> */}
-            <Showcases title="语文" subtitle={`共${appData.length}个应用`} value={appData}/>
+            <Route
+              path="/cate/:id"
+              component={ShowcasePage}
+            />
+            <Route
+              path="/search"
+              component={SearchResultPage}
+            />
+            <Route
+              path="/manager/:id"
+              component={ManagerPage}
+            />
           </main>
         </div>
       </>
