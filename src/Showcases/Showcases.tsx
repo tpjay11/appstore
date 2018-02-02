@@ -1,7 +1,6 @@
 import * as React from 'react';
 import Panel from '../Panel';
-import { ShowcaseProps } from '../Showcase';
-import AppList from '../AppList';
+import Showcase, { ShowcaseProps } from '../Showcase';
 
 export { ShowcaseProps };
 
@@ -51,8 +50,14 @@ class Showcases extends React.Component<Props, State> {
         const { title, subtitle, value } = this.props;
         const { panelWidth } = this.state;
         return (
-            <Panel title={title} subtitle={subtitle} style={{width: `${panelWidth}px`}}>
-                <AppList value={value} />
+            <Panel title={title} subtitle={subtitle} style={{ width: `${panelWidth}px` }}>
+                <div className="showcase-list clearfix">
+                    {
+                        value.map(info => {
+                            return <Showcase key={info.id} {...info} />;
+                        })
+                    }
+                </div>
             </Panel>
         );
     }
