@@ -1,0 +1,116 @@
+
+.AppUpdateItem{
+    display: flex;
+    width: 1100px;
+    padding:0;
+    margin: 0px;
+    position: relative;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    
+}
+.AppUpdateItem img{
+    margin-right: 8px;
+    border-radius: 8px ;
+
+}
+.AppUpdateItem .app-info{
+    width:252px;
+    display: flex;
+    flex-direction: column;
+   align-items: flex-start;
+   padding:0;
+   margin: 0px;
+}
+.AppUpdateItem .app-name{
+    height:24px; 
+    font-size:16px;
+    font-family:NotoSansCJKsc-Regular;
+    color:rgba(94,94,94,1);
+    line-height:24px;
+    padding:0;
+    margin: 0px;
+}
+
+.AppUpdateItem .app-version{
+    width:72px;
+    height:20px; 
+    font-size:14px;
+    font-family:NotoSansCJKsc-Regular;
+    color:rgba(94,94,94,1);
+    line-height:20px;padding:0;
+    margin: 0px;
+
+}
+.AppUpdateItem .publish-info{
+    width:139.1px;
+    height:20px; 
+    font-size:14px;
+    font-family:NotoSansCJKsc-Regular;
+    color:rgba(94,94,94,1);
+    line-height:20px;
+    padding:0;
+    margin: 0px;
+}
+.AppUpdateItem .feature-info{
+    width:200px;
+     margin: 0;
+     padding: 0;
+     /* position: absolute;
+     right:590px;
+     top:10px; */
+    font-size:14px;
+    font-family:NotoSansCJKsc-Regular;
+    color:rgba(94,94,94,1);
+    line-height:20px;
+}
+.feature{
+    
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+}
+
+.AppUpdateItem .app-size{
+    width:84px;
+    height:20px; 
+    font-size:14px;
+    font-family:NotoSansCJKsc-Regular;
+    color:rgba(94,94,94,1);
+    line-height:20px;
+    position: absolute;
+    right: 436px;
+}
+.AppUpdateItem button{
+    position: absolute;
+    right: 0px;
+    top:8px;
+    width:80px;
+    height:32px; 
+    background:linear-gradient(rgba(255,255,255,1),rgba(253,253,253,1));
+    border-radius: 4px ; 
+    font-size:14px;
+    font-family:NotoSansCJKsc-Regular;
+    color:rgba(94,94,94,1);
+    line-height:20px;
+}
+hr {
+    width: 1100px;
+    margin: 10px 0px;
+
+}
+
+.hide-info{
+    width:60px;
+    height:21px; 
+    font-size:14px;
+    font-family:NotoSansCJKsc-Regular;
+    color:rgba(30,178,255,1);
+    line-height:20px;
+}
+
+.hide-info:hover{
+    cursor:pointer;
+}
+
+
